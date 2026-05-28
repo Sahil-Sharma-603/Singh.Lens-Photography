@@ -33,7 +33,7 @@ export const Navbar = () => {
     initial = {{y:-100}}
     animate = {{y:0}}
     transition = {{duration: 0.5, ease: 'easeOut'}}
-    className = "fixed top-0 right-0 left-0"
+    className = "fixed top-0 right-0 left-0 z-50"
    >
 
 
@@ -102,7 +102,7 @@ export const Navbar = () => {
 
 
     {open && (
-        <ul className="lg:hidden flex flex-col items-center absolute top-16 left-0 w-full bg-black bg-background/95 backdrop-blur border-t border-border py-3 gap-3">
+        <ul className="lg:hidden flex flex-col items-center absolute top-16 left-0 w-full  backdrop-blur border-t border-border py-3 gap-3">
         <li>
             <a href="#hero" onClick={(e) => {
                 e.preventDefault();
