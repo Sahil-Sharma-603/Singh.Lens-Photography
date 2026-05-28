@@ -37,9 +37,10 @@ export const Hero = () => {
     return (
 
 
-        <section id="hero" className=" relative h-screen flex items-center justify-center bg-center  bg-no-repeat bg-cover overflow-hidden">
+        <section id="hero" className=" relative h-screen flex items-center justify-center bg-center  bg-no-repeat bg-cover overflow-hidden"
+        >
 
-            <AnimatePresence>
+            <AnimatePresence initial={false}>
                 <motion.div className = "absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${isMobile ? mobileImages[currentImage] : desktopImages[currentImage]})` }}
                     key={currentImage}
                     initial={{ x: "100%" }}
