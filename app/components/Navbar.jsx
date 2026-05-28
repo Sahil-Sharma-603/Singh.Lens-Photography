@@ -102,7 +102,7 @@ export const Navbar = () => {
 
 
     {open && (
-        <ul className="lg:hidden flex flex-col items-center absolute top-16 left-0 w-full bg-black/70 backdrop-blur-xl border-t border-border py-3 gap-3 ">
+        <ul className="lg:hidden flex flex-col items-center absolute top-16 left-0 w-full bg-background/70 backdrop-blur-md border-t border-border py-3 gap-3 ">
         <li>
             <a href="#hero" onClick={(e) => {
                 e.preventDefault();

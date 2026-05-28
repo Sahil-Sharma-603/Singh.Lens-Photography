@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
 const desktopImages = [
-    "/pic1.jpg",
-    "/pic2.jpg",
+    "/hero_desktop_pics/pic1.jpg",
+    "/hero_desktop_pics/pic2.jpg",
 ];
 
 const mobileImages = [
-    "/mobilepic1.jpg",
-    "/mobilepic2.png",
+    "/hero_mobile_pics/mobilepic1.jpg",
+    "/hero_mobile_pics/mobilepic2.png",
 ]
 
 export const Hero = () => {
@@ -41,7 +41,8 @@ export const Hero = () => {
         >
 
             <AnimatePresence initial={false}>
-                <motion.div className = "absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${isMobile ? mobileImages[currentImage] : desktopImages[currentImage]})` }}
+                <motion.div className = "absolute inset-0 bg-cover bg-center" 
+                style={{ backgroundImage: `url(${isMobile ? mobileImages[currentImage] : desktopImages[currentImage]})` }}
                     key={currentImage}
                     initial={{ x: "100%" }}
                     animate={{ x: 0 }}

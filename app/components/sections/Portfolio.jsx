@@ -1,4 +1,20 @@
 
+const portfolioImages = [
+  {
+    id: 1,
+    src: "/All_Images/pic1.jpg",
+    title: "Wedding"
+  },
+  {
+    id: 2,
+    src: "/All_Images/pic2.jpg",
+    title: "Birthday"
+
+  },
+
+
+]
+
 export const Portfolio = () => {
   return (
     <section
@@ -18,6 +34,30 @@ export const Portfolio = () => {
           Capturing emotions, connections, and timeless memories through every frame.
         </p>
       </div>
+
+      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {portfolioImages.map((image) => (
+          <div key={image.id} className="relative overflow-hidden rounded-lg">
+            <img
+              src={image.src}
+              alt={image.title}
+              className="h-80 w-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+            {/* <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span className="text-white text-lg font-semibold">{image.title}</span>
+            </div> */}
+          </div>
+        ))}
+
+      </div>
+
+      <div className="flex justify-center items-center">
+        <button className="mt-12 px-6 py-3 bg-amber-400 text-white font-semibold rounded-full hover:bg-amber-500 transition justify-center items-center flex ">
+          View Full Portfolio
+        </button>
+      </div>
+
+
     </section>
   );
 };
