@@ -49,7 +49,7 @@ export const Navbar = () => {
     <a href="#hero" onClick={(e) => {
             e.preventDefault();
             scrollToSection('#hero')}} 
-            className="text-2xl font-bold">
+            className="md:text-3xl text-2xl font-bold">
             SinghLens Photography
     </a>
 
@@ -59,7 +59,7 @@ export const Navbar = () => {
         <a href="#hero" onClick={(e) => {
             e.preventDefault();
             scrollToSection('#hero')}} 
-            className="text-black-700 hover:text-gray-900">
+            className="text-black-700 hover:text-amber-400">
           Home
         </a>
       </li>
@@ -67,7 +67,7 @@ export const Navbar = () => {
         <a href="#portfolio" onClick={(e)=>{
             e.preventDefault();
             scrollToSection('#portfolio') }}
-            className="text-black-700 hover:text-gray-900">
+            className="text-black-700 hover:text-amber-400">
           Portfolio
         </a>
       </li>
@@ -76,7 +76,7 @@ export const Navbar = () => {
             e.preventDefault();
             scrollToSection('#about')
         }}
-        className="text-black-700 hover:text-gray-900">
+        className="text-black-700 hover:text-amber-400">
           About
         </a>
       </li>
@@ -84,7 +84,7 @@ export const Navbar = () => {
         <a href="#contact" onClick={(e)=>{
             e.preventDefault(); 
             scrollToSection('#contact')}} 
-            className="text-black-700 hover:text-gray-900">
+            className="text-black-700 hover:text-amber-400">
           Contact
         </a>
       </li>
@@ -109,7 +109,7 @@ export const Navbar = () => {
                 scrollToSection('#hero');
                 setOpen(false);
             }} 
-            className="text-white text-lg hover:text-gray-300">
+            className="text-white text-lg hover:text-amber-400">
             Home
             </a>
         </li>
@@ -119,7 +119,7 @@ export const Navbar = () => {
                 scrollToSection('#portfolio');
                 setOpen(false);
             }}
-            className="text-white text-lg hover:text-gray-300">
+            className="text-white text-lg hover:text-amber-400">
             Portfolio
             </a>
         </li>
@@ -129,7 +129,7 @@ export const Navbar = () => {
                 scrollToSection('#about');
                 setOpen(false);
             }}
-            className="text-white text-lg hover:text-gray-300">
+            className="text-white text-lg hover:text-amber-400">
             About
             </a>
         </li>
@@ -139,7 +139,7 @@ export const Navbar = () => {
                 scrollToSection('#contact');
                 setOpen(false);
             }} 
-            className="text-white text-lg hover:text-gray-300">
+            className="text-white text-lg hover:text-amber-400">
             Contact
             </a>
         </li>
