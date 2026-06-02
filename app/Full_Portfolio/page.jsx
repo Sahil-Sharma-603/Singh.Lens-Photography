@@ -1,7 +1,51 @@
 
 'use client';
 
-import {useState} from 'react';
+import { useState } from 'react';
+
+const portfolioImages = [
+    {
+        id: 1,
+        src: "/All_Images/lifestyle.png",
+        title: "Lifestyle",
+        category: "Lifestyle"
+    },
+    {
+        id: 2,
+        src: "/All_Images/pre-wedding1.jpg",
+        title: "Pre-Wedding",
+        category: "Pre-Wedding"
+    },
+    {
+        id: 3,
+        src: "/All_Images/maternity.png",
+        title: "Maternity",
+        category: "Maternity"
+    },
+    {
+        id: 4,
+        src: "/All_Images/Birthday1.png",
+        title: "Birthday",
+        category: "Family"
+
+    },
+    {
+        id: 5,
+        src: "/All_Images/family1.png",
+        title: "Family",
+        category: "Family"
+
+
+    },
+    {
+        id: 6,
+        src: "/All_Images/portrait.png",
+        title: "Portrait",
+        category: "Lifestyle"
+
+    },
+
+]
 
 
 const categories = [
@@ -50,15 +94,28 @@ export default function Full_Portfolio() {
                     <button
                         key={category}
                         onClick={() => setActiveCategory(category)}
-                        className= {`rounded-full border px-6 py-3 text-sm font-semibold uppercase tracking-widest transition ${
-                            activeCategory === category
-                                ?"border-amber-400 bg-amber-400 text-black"
-                                :"border-zinc-600 text-zinc-200 hover:bg-amber-400 hover:text-black hover:border-amber-400"
-                        } `}
-            
+                        className={`rounded-full border px-6 py-3 text-sm font-semibold uppercase tracking-widest transition ${activeCategory === category
+                                ? "border-amber-400 bg-amber-400 text-black"
+                                : "border-zinc-600 text-zinc-200 hover:bg-amber-400 hover:text-black hover:border-amber-400"
+                            } `}
+
                     >
                         {category}
                     </button>
+                ))}
+            </div>
+
+
+            <div className="px-6 mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {portfolioImages.map((image) => (
+                    <div key = {image.id} className='relative overflow-hidden rounded-lg'>
+                        <img
+                            src = {image.src}
+                            alt = {image.title}
+                            className='h-80 w-full object-cover transition-transform duration-300 hover:scale-105'
+                        />
+                    
+                    </div>
                 ))}
             </div>
 
