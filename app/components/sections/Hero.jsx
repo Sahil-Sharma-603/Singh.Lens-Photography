@@ -3,15 +3,31 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 
+
+// "/hero_desktop_pics/desktop_img3.png",
+// "/hero_desktop_pics/desktop_img2.jpg",
 const desktopImages = [
-    "/hero_desktop_pics/pic1.jpg",
-    "/hero_desktop_pics/pic2.jpg",
+    "/hero_desktop_pics/desktop_img1.jpg",
+    "/hero_desktop_pics/desktop_img4.png",
+    "hero_desktop_pics/desktop_img3.png",
+    "/hero_desktop_pics/desktop_img5.png",
+    "/hero_desktop_pics/lifestyle.png",
+    "/hero_desktop_pics/portrait.png",
+    "/hero_desktop_pics/maternity.png",
+  
+   
 ];
 
 const mobileImages = [
     "/hero_mobile_pics/mobilepic1.jpg",
-    "/hero_mobile_pics/mobilepic2.png",
+    "/hero_mobile_pics/mobilepic2.jpg",
+    "/hero_mobile_pics/mobilepic3.jpg",
+    "/hero_mobile_pics/mobilepic4.png",
+    "/hero_mobile_pics/mobilepic5.png",
+    "/hero_mobile_pics/mobilepic6.png",
+    "/hero_mobile_pics/mobilepic7.jpg",
 ]
+
 
 export const Hero = () => {
 
