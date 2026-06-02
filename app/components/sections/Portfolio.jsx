@@ -1,4 +1,6 @@
 
+import Link from "next/link";
+
 const portfolioImages = [
 
   {
@@ -30,7 +32,7 @@ const portfolioImages = [
 
   },
   {
-    id: 5,
+    id: 6,
     src: "/All_Images/portrait.png",
     title: "Portrait"
 
@@ -75,9 +77,9 @@ export const Portfolio = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <button className="mt-12 px-6 py-3 bg-amber-400 text-white font-semibold rounded-full hover:bg-amber-500 transition justify-center items-center flex ">
+        <Link  href = "/Full_Portfolio" className="mt-12 px-6 py-3 bg-amber-400 text-white font-semibold rounded-full hover:bg-amber-500 transition justify-center items-center flex ">
           View Full Portfolio
-        </button>
+        </Link>
       </div>
 
 
