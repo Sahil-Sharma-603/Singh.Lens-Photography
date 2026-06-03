@@ -61,6 +61,14 @@ export default function Full_Portfolio() {
 
     const [activeCategory, setActiveCategory] = useState("All");
 
+    const filterImages = [];
+
+    if (activeCategory === "All") {
+        filterImages.push(...portfolioImages);
+    }else {
+        filterImages.push(...portfolioImages.filter(image => image.category === activeCategory));
+    }
+
     return (
         <section
             id="full_portfolio"
@@ -107,7 +115,7 @@ export default function Full_Portfolio() {
 
 
             <div className="px-6 mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {portfolioImages.map((image) => (
+                {filterImages.map((image) => (
                     <div key = {image.id} className='relative overflow-hidden rounded-lg'>
                         <img
                             src = {image.src}
