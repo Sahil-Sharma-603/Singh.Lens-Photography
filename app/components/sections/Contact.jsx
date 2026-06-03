@@ -3,13 +3,33 @@
 import Form from 'next/form';
 
 export const Contact = () => {
-  async function handleSubmit(formData) {
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const eventType = formData.get('eventType');
-    const message = formData.get('message');
 
-    console.log('Form submitted with:', { name, email, eventType, message });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      eventType: e.target.eventType.value,
+      message: e.target.message.value,
+    }
+   
+    // sending data to backend API route
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    if(response.ok){
+      console.log('Message sent successfully!');
+      e.target.reset(); // Clear the form after successful submission
+    }else {
+      console.log("Something went wrong");
+    }
+  
+
   }
 
   return (
@@ -33,7 +53,7 @@ export const Contact = () => {
         </div>
 
         <Form
-          action={handleSubmit}
+          onSubmit={handleSubmit}
           className="rounded-2xl border border-zinc-800 bg-white/5 p-6 shadow-2xl backdrop-blur-md md:p-8"
         >
           <div className="mb-5">

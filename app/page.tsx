@@ -3,6 +3,7 @@ import {About} from "@/app/components/sections/About";
 import {Contact} from "@/app/components/sections/Contact";
 import {Portfolio} from "@/app/components/sections/Portfolio";
 import {Navbar} from "@/app/components/Navbar";
+import {Footer} from "@/app/components/Footer";
 
 export default function Home() {
   return(
@@ -15,7 +16,7 @@ export default function Home() {
       <About />
       <Contact />
     </main>
-    {/* footer later */}
+    <Footer />
     </div>
   );
 
