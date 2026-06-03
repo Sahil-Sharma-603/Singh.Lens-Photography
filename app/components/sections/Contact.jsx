@@ -24,6 +24,7 @@ export const Contact = () => {
     });
     if(response.ok){
       console.log('Message sent successfully!');
+      alert('Thank you for reaching out! Your message has been sent successfully. I will get back to you as soon as possible.');
       e.target.reset(); // Clear the form after successful submission
     }else {
       console.log("Something went wrong");

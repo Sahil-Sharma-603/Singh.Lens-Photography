@@ -75,7 +75,7 @@ export const Hero = () => {
                 </p>
 
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                    SinghLens Photography
+                    Singh.Lens Photography
                 </h1>
 
                 <p className="mt-5 text-lg md:text-2xl font-light tracking-wide">

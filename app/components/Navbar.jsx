@@ -50,7 +50,7 @@ export const Navbar = () => {
             e.preventDefault();
             scrollToSection('#hero')}} 
             className="md:text-3xl text-2xl font-bold">
-            SinghLens Photography
+            Singh.Lens Photography
     </a>
 
 

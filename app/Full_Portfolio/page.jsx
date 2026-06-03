@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from "framer-motion";
 
 const portfolioImages = [
     {
@@ -44,7 +45,175 @@ const portfolioImages = [
         category: "Lifestyle"
 
     },
-
+    {
+        id: 7,
+        src: "/All_Images/newborn1.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 8,
+        src: "/All_Images/newborn2.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 9,
+        src: "/All_Images/newborn3.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 10,
+        src: "/All_Images/newborn4.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 11,
+        src: "/All_Images/newborn5.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 12,
+        src: "/All_Images/newborn6.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 13,
+        src: "/All_Images/newborn7.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 14,
+        src: "/All_Images/newborn8.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 15,
+        src: "/All_Images/newborn9.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 16,
+        src: "/All_Images/pre-wedding2.jpg",
+        title: "Pre-Wedding",
+        category: "Pre-Wedding"
+    },
+    {
+        id: 17,
+        src: "/All_Images/pre-wedding3.jpg",
+        title: "Pre-Wedding",
+        category: "Pre-Wedding"
+    },
+    {
+        id: 18,
+        src: "/All_Images/pre-wedding4.jpg",
+        title: "Pre-Wedding",
+        category: "Pre-Wedding"
+    },
+    {
+        id: 19,
+        src: "/All_Images/pre-wedding5.jpg",
+        title: "Pre-Wedding",
+        category: "Pre-Wedding"
+    },
+    {
+        id: 20,
+        src: "/All_Images/maternity5.jpg",
+        title: "Maternity",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 21,
+        src: "/All_Images/pre-wedding7.jpg",
+        title: "Pre-Wedding",
+        category: "Pre-Wedding"
+    },
+    {
+        id: 22,
+        src: "/All_Images/maternity2.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 23,
+        src: "/All_Images/maternity3.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 24,
+        src: "/All_Images/maternity4.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 25,
+        src: "/All_Images/family3.jpg",
+        title: "Family",
+        category: "Family"
+    },
+    {
+        id: 26,
+        src: "/All_Images/family4.jpg",
+        title: "Family",
+        category: "Family"
+    },
+    {
+        id: 27,
+        src: "/All_Images/lifestyle2.jpg",
+        title: "Lifestyle",
+        category: "Lifestyle"
+    },
+    {
+        id: 28,
+        src: "/All_Images/lifestyle3.jpg",
+        title: "Lifestyle",
+        category: "Lifestyle"
+    },
+    {
+        id: 29,
+        src: "/All_Images/lifestyle4.jpg",
+        title: "Lifestyle",
+        category: "Lifestyle"
+    },
+    {
+        id: 30,
+        src: "/All_Images/newborn10.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 31,
+        src: "/All_Images/newborn11.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 32,
+        src: "/All_Images/maternity6.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 33,
+        src: "/All_Images/maternity7.jpg",
+        title: "Newborn",
+        category: "Maternity & New Born"
+    },
+    {
+        id: 34,
+        src: "/All_Images/family5.jpg",
+        title: "Family",
+        category: "Family"
+    },
+    
 
 ]
 
@@ -113,18 +282,27 @@ export default function Full_Portfolio() {
                 ))}
             </div>
 
-
             <div className="px-6 mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {filterImages.map((image, index) => (
-                    <div key={image.id} className=' group relative overflow-hidden rounded-lg'>
+                    <motion.div
+                        key={image.id}
+                        initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{
+                            duration: 0.5,
+                            ease: "easeOut",
+                            delay: index * 0.05,
+                        }}
+                        className="group relative overflow-hidden rounded-lg"
+                    >
                         <img
                             src={image.src}
                             alt={image.title}
                             onClick={() => setSelectedIndex(index)}
-                            className='h-80 w-full object-cover cursor-pointer transition-transform duration-500 hover:scale-110'
+                            className="h-80 w-full cursor-pointer object-cover transition-transform duration-500 hover:scale-110"
                         />
-
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 

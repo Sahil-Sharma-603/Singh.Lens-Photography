@@ -6,7 +6,7 @@ export const About = () => {
         {/* Photographer Image */}
         <div className="overflow-hidden rounded-2xl">
           <img
-            src="/All_Images/about_myself.jpg"
+            src="/All_Images/about_section_photo.JPG"
             alt="Photographer portrait"
             className="h-[520px] w-full object-cover"
           />
@@ -38,7 +38,7 @@ export const About = () => {
           </p>
 
           <p className="mt-5 text-lg leading-relaxed text-zinc-400">
-            Through SinghLens Photography, I aim to create images that feel
+            Through Singh.Lens Photography, I aim to create images that feel
             natural, emotional, and unforgettable — photographs you can look
             back on and truly feel again.
           </p>
