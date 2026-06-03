@@ -31,7 +31,7 @@ export const About = () => {
           </p>
 
           <p className="mt-5 text-lg leading-relaxed text-zinc-400">
-            Whether it’s a wedding, portrait session, maternity shoot, birthday,
+            Whether it’s a wedding, portrait session, maternity shoot, new born baby shoot, birthday,
             or family celebration, my goal is to make every person feel
             comfortable in front of the camera while preserving the moments that
             matter most.

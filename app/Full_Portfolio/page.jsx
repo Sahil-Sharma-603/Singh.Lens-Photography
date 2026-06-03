@@ -20,7 +20,7 @@ const portfolioImages = [
         id: 3,
         src: "/All_Images/maternity.png",
         title: "Maternity",
-        category: "Maternity"
+        category: "Maternity & New Born"
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ const categories = [
     "All",
     "Lifestyle",
     "Pre-Wedding",
-    "Maternity",
+    "Maternity & New Born",
     "Family"
 ]
 
