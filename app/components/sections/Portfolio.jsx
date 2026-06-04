@@ -21,7 +21,7 @@ const portfolioImages = [
   },
   {
     id: 4,
-    src: "/All_Images/Birthday1.png",
+    src: "/All_Images/birthday1.png",
     title: "Birthday"
 
   },

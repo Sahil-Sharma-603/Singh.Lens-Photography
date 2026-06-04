@@ -197,7 +197,7 @@ const portfolioImages = [
     },
     {
         id: 32,
-        src: "/All_Images/maternity6.jpg",
+        src: "/All_Images/maternity6.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
