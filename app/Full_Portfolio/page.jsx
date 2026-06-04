@@ -25,7 +25,7 @@ const portfolioImages = [
     },
     {
         id: 4,
-        src: "/All_Images/Birthday1.png",
+        src: "/All_Images/birthday1.png",
         title: "Birthday",
         category: "Family"
 
@@ -47,85 +47,85 @@ const portfolioImages = [
     },
     {
         id: 7,
-        src: "/All_Images/newborn1.jpg",
+        src: "/All_Images/newborn1.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 8,
-        src: "/All_Images/newborn2.jpg",
+        src: "/All_Images/newborn2.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 9,
-        src: "/All_Images/newborn3.jpg",
+        src: "/All_Images/newborn3.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 10,
-        src: "/All_Images/newborn4.jpg",
+        src: "/All_Images/newborn4.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 11,
-        src: "/All_Images/newborn5.jpg",
+        src: "/All_Images/newborn5.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 12,
-        src: "/All_Images/newborn6.jpg",
+        src: "/All_Images/newborn6.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 13,
-        src: "/All_Images/newborn7.jpg",
+        src: "/All_Images/newborn7.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 14,
-        src: "/All_Images/newborn8.jpg",
+        src: "/All_Images/newborn8.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 15,
-        src: "/All_Images/newborn9.jpg",
+        src: "/All_Images/newborn9.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 16,
-        src: "/All_Images/pre-wedding2.jpg",
+        src: "/All_Images/pre-wedding2.JPG",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 17,
-        src: "/All_Images/pre-wedding3.jpg",
+        src: "/All_Images/pre-wedding3.JPG",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 18,
-        src: "/All_Images/pre-wedding4.jpg",
+        src: "/All_Images/pre-wedding4.JPG",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 19,
-        src: "/All_Images/pre-wedding5.jpg",
+        src: "/All_Images/pre-wedding5.JPG",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 20,
-        src: "/All_Images/maternity5.jpg",
+        src: "/All_Images/maternity5.JPG",
         title: "Maternity",
         category: "Maternity & New Born"
     },
@@ -137,31 +137,31 @@ const portfolioImages = [
     },
     {
         id: 22,
-        src: "/All_Images/maternity2.jpg",
+        src: "/All_Images/maternity2.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 23,
-        src: "/All_Images/maternity3.jpg",
+        src: "/All_Images/maternity3.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 24,
-        src: "/All_Images/maternity4.jpg",
+        src: "/All_Images/maternity4.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 25,
-        src: "/All_Images/family3.jpg",
+        src: "/All_Images/family3.JPG",
         title: "Family",
         category: "Family"
     },
     {
         id: 26,
-        src: "/All_Images/family4.jpg",
+        src: "/All_Images/family4.JPG",
         title: "Family",
         category: "Family"
     },
@@ -173,19 +173,19 @@ const portfolioImages = [
     },
     {
         id: 28,
-        src: "/All_Images/lifestyle3.jpg",
+        src: "/All_Images/lifestyle3.JPG",
         title: "Lifestyle",
         category: "Lifestyle"
     },
     {
         id: 29,
-        src: "/All_Images/lifestyle4.jpg",
+        src: "/All_Images/lifestyle4.JPG",
         title: "Lifestyle",
         category: "Lifestyle"
     },
     {
         id: 30,
-        src: "/All_Images/newborn10.jpg",
+        src: "/All_Images/newborn10.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
@@ -203,13 +203,13 @@ const portfolioImages = [
     },
     {
         id: 33,
-        src: "/All_Images/maternity7.jpg",
+        src: "/All_Images/maternity7.JPG",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 34,
-        src: "/All_Images/family5.jpg",
+        src: "/All_Images/family5.JPG",
         title: "Family",
         category: "Family"
     },
