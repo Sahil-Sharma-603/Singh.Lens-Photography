@@ -5,13 +5,13 @@ const portfolioImages = [
 
   {
     id: 1,
-    src: "/All_Images/lifestyle.png",
+    src: "/All_Images/lifestyle.webp",
     title: "Lifestyle"
   },
 
   {
     id: 2,
-    src: "/All_Images/pre-wedding1.jpg",
+    src: "/All_Images/pre-wedding1.webp",
     title: "Pre-Wedding"
   },
   {
@@ -21,19 +21,19 @@ const portfolioImages = [
   },
   {
     id: 4,
-    src: "/All_Images/birthday1.png",
+    src: "/All_Images/birthday1.webp",
     title: "Birthday"
 
   },
   {
     id: 5,
-    src: "/All_Images/family1.png",
+    src: "/All_Images/family1.webp",
     title: "Family"
 
   },
   {
     id: 6,
-    src: "/All_Images/portrait.png",
+    src: "/All_Images/portrait.webp",
     title: "Portrait"
 
   },

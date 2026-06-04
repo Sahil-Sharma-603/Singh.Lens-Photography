@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 const portfolioImages = [
     {
         id: 1,
-        src: "/All_Images/lifestyle.png",
+        src: "/All_Images/lifestyle.webp",
         title: "Lifestyle",
         category: "Lifestyle"
     },
     {
         id: 2,
-        src: "/All_Images/pre-wedding1.jpg",
+        src: "/All_Images/pre-wedding1.webp",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
@@ -25,14 +25,14 @@ const portfolioImages = [
     },
     {
         id: 4,
-        src: "/All_Images/birthday1.png",
+        src: "/All_Images/birthday1.webp",
         title: "Birthday",
         category: "Family"
 
     },
     {
         id: 5,
-        src: "/All_Images/family1.png",
+        src: "/All_Images/family1.webp",
         title: "Family",
         category: "Family"
 
@@ -40,176 +40,176 @@ const portfolioImages = [
     },
     {
         id: 6,
-        src: "/All_Images/portrait.png",
+        src: "/All_Images/portrait.webp",
         title: "Portrait",
         category: "Lifestyle"
 
     },
     {
         id: 7,
-        src: "/All_Images/newborn1.JPG",
+        src: "/All_Images/newborn1.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 8,
-        src: "/All_Images/newborn2.JPG",
+        src: "/All_Images/newborn2.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 9,
-        src: "/All_Images/newborn3.JPG",
+        src: "/All_Images/newborn3.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 10,
-        src: "/All_Images/newborn4.JPG",
+        src: "/All_Images/newborn4.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 11,
-        src: "/All_Images/newborn5.JPG",
+        src: "/All_Images/newborn5.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 12,
-        src: "/All_Images/newborn6.JPG",
+        src: "/All_Images/newborn6.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 13,
-        src: "/All_Images/newborn7.JPG",
+        src: "/All_Images/newborn7.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 14,
-        src: "/All_Images/newborn8.JPG",
+        src: "/All_Images/newborn8.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 15,
-        src: "/All_Images/newborn9.JPG",
+        src: "/All_Images/newborn9.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 16,
-        src: "/All_Images/pre-wedding2.JPG",
+        src: "/All_Images/pre-wedding2.webp",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 17,
-        src: "/All_Images/pre-wedding3.JPG",
+        src: "/All_Images/pre-wedding3.webp",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 18,
-        src: "/All_Images/pre-wedding4.JPG",
+        src: "/All_Images/pre-wedding4.webp",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 19,
-        src: "/All_Images/pre-wedding5.JPG",
+        src: "/All_Images/pre-wedding5.webp",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 20,
-        src: "/All_Images/maternity5.JPG",
+        src: "/All_Images/maternity5.webp",
         title: "Maternity",
         category: "Maternity & New Born"
     },
     {
         id: 21,
-        src: "/All_Images/pre-wedding7.jpg",
+        src: "/All_Images/pre-wedding7.webp",
         title: "Pre-Wedding",
         category: "Pre-Wedding"
     },
     {
         id: 22,
-        src: "/All_Images/maternity2.JPG",
+        src: "/All_Images/maternity2.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 23,
-        src: "/All_Images/maternity3.JPG",
+        src: "/All_Images/maternity3.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 24,
-        src: "/All_Images/maternity4.JPG",
+        src: "/All_Images/maternity4.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 25,
-        src: "/All_Images/family3.JPG",
+        src: "/All_Images/family3.webp",
         title: "Family",
         category: "Family"
     },
     {
         id: 26,
-        src: "/All_Images/family4.JPG",
+        src: "/All_Images/family4.webp",
         title: "Family",
         category: "Family"
     },
     {
         id: 27,
-        src: "/All_Images/lifestyle2.jpg",
+        src: "/All_Images/lifestyle2.webp",
         title: "Lifestyle",
         category: "Lifestyle"
     },
     {
         id: 28,
-        src: "/All_Images/lifestyle3.JPG",
+        src: "/All_Images/lifestyle3.webp",
         title: "Lifestyle",
         category: "Lifestyle"
     },
     {
         id: 29,
-        src: "/All_Images/lifestyle4.JPG",
+        src: "/All_Images/lifestyle4.webp",
         title: "Lifestyle",
         category: "Lifestyle"
     },
     {
         id: 30,
-        src: "/All_Images/newborn10.JPG",
+        src: "/All_Images/newborn10.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 31,
-        src: "/All_Images/newborn11.jpg",
+        src: "/All_Images/newborn11.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 32,
-        src: "/All_Images/maternity6.JPG",
+        src: "/All_Images/maternity6.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 33,
-        src: "/All_Images/maternity7.JPG",
+        src: "/All_Images/maternity7.webp",
         title: "Newborn",
         category: "Maternity & New Born"
     },
     {
         id: 34,
-        src: "/All_Images/family5.JPG",
+        src: "/All_Images/family5.webp",
         title: "Family",
         category: "Family"
     },
