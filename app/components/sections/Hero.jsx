@@ -9,13 +9,13 @@ import { motion, AnimatePresence } from "framer-motion";
 const desktopImages = [
     "/hero_desktop_pics/desktop_img1.jpg",
     "/hero_desktop_pics/desktop_img4.png",
-    "hero_desktop_pics/desktop_img3.png",
+    "/hero_desktop_pics/desktop_img3.png",
     "/hero_desktop_pics/desktop_img5.png",
     "/hero_desktop_pics/lifestyle.png",
     "/hero_desktop_pics/portrait.png",
     "/hero_desktop_pics/maternity.png",
-  
-   
+
+
 ];
 
 const mobileImages = [
@@ -50,20 +50,29 @@ export const Hero = () => {
         return () => clearInterval(interval);
     }, [])
 
+
+    useEffect(() => {
+        [...desktopImages, ...mobileImages].forEach((src) => {
+          const img = new Image();
+          img.src = src;
+        });
+      }, []);
+
     return (
 
 
         <section id="hero" className=" relative h-screen flex items-center justify-center bg-center  bg-no-repeat bg-cover overflow-hidden"
         >
 
-            <AnimatePresence initial={false}>
-                <motion.div className = "absolute inset-0 bg-cover bg-center" 
-                style={{ backgroundImage: `url(${isMobile ? mobileImages[currentImage] : desktopImages[currentImage]})` }}
+            <AnimatePresence  mode="sync" initial={false}>
+                <motion.div className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${isMobile ? mobileImages[currentImage] : desktopImages[currentImage]})` }}
                     key={currentImage}
-                    initial={{ x: "100%" }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 1 }}
-                    exit={{ x: "-100%" }}
+                   
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                transition={{ duration: 1 }}
+                exit={{ x: "-100%" }}
                 />
             </AnimatePresence>
             {/* Dark Overlay - decide based on client. */}
