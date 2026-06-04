@@ -9,7 +9,7 @@ export async function POST(request) {
 
     const { data, error } = await resend.emails.send({
       from: "SinghLens Photography <onboarding@resend.dev>",
-      to: ["sidkaint30@gmail.com"],
+      to: ["gurjeetkalsi11273@gmail.com"],
       subject: `New ${eventType} Inquiry from ${name}`,
       html: `
   <div style="font-family: Arial, sans-serif; background-color: #0f0f0f; padding: 40px; color: #ffffff;">
